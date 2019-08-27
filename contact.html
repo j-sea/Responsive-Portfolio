@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Chan - Basic Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header id="container-header">
+        <div id="container-header-inner">
+            <div id="site-title">
+                Jonathan Chan
+            </div>
+            <nav>
+                <ul id="menu-main">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#" class="current">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="container-main">
+        <div id="container-main-inner">
+            <h1 id="page-title">Contact</h1>
+            <form id="contact-form" method="POST" onsubmit="alert('This form does nothing...'); return false;">
+                <div>
+                    <label>
+                        Name
+                        <input type="text" id="contact-name" placeholder="Please enter your name here">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Email
+                        <input type="text" id="contact-email" placeholder="Please enter your contact email here">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Message
+                        <textarea id="contact-message" placeholder="Please enter your message here"></textarea>
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer id="container-footer">
+        <p id="container-footer-inner">
+            Copyright &copy;
+        </p>
+    </footer>
+</body>
+</html>
