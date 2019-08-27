@@ -1,0 +1,246 @@
+html, body {
+    height: 100%;
+}
+
+figure {
+    margin: 0px;
+}
+
+body {
+    background: url('../images/papyrus.png') repeat;
+    color: #777777;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #4aaaa5;
+    margin-top: 10px;
+}
+
+p {
+    line-height: 200%;
+}
+
+#site-title, h1, h2 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+#container-header-inner, #container-main {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#container-header {
+    background-color: #ffffff;
+    height: 90px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 38px;
+}
+
+#container-main {
+    flex: 1 0 auto;
+}
+
+#container-main-inner {
+    background-color: #ffffff;
+    border: thin solid #cccccc;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#container-footer {
+    background-color: #666666;
+    height: 70px;
+    border-top: 8px solid #4aaaa5;
+    margin-top: 38px;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+#container-footer-inner {
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    color: #ccc;
+}
+
+#site-title {
+    background-color: #4aaaa5;
+    color: #fff;
+    float: left;
+    font-size: 32px;
+    font-weight: bold;
+    height: 90px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+nav {
+    margin-right: -18px;
+}
+
+#menu-main {
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    list-style-type: none;
+    text-align: right;
+    font-size: 0px;
+}
+
+#menu-main > li {
+    font-size: 16px;
+    padding: 0px 18px;
+    line-height: 18px;
+}
+
+#menu-main > li + li {
+    border-left: thin solid #ddd;
+}
+
+#menu-main > li > a {
+    color: #777;
+    text-decoration: none;
+}
+
+#menu-main > li > a.current {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#menu-main > li > a:hover, #menu-main > li > a:focus {
+    color: #222;
+    text-decoration: underline;
+}
+
+#page-title {
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 30px;
+}
+
+
+
+#about-photo {
+    float: left;
+    width: 200px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+#contact-form label, #contact-name, #contact-email, #contact-message {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #777;
+}
+
+#contact-name, #contact-email, #contact-message {
+    box-sizing: border-box;
+    padding: 4px;
+    border: thin solid #ddd;
+    margin: 5px 0px 20px;
+}
+
+#contact-name:hover, #contact-email:hover, #contact-message:hover,
+#contact-name:focus, #contact-email:focus, #contact-message:focus {
+    border: thin solid #888;   
+}
+
+#contact-message {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#contact-form button {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 12px 35px;
+    border: 3px double transparent;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#contact-form button:hover, #contact-form button:focus {
+    border: 3px double white;
+}
+
+#contact-form button:active {
+    color: black;
+}
+
+#container-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -10px 0px 0px -10px;
+}
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.gallery-item > img {
+    vertical-align: middle;
+}
+
+.gallery-item > figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.gallery-item > figcaption > a {
+    display: block;
+    text-align: center;
+    height: 150%;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: -10px;
+    color: #fff;
+    opacity: 1;
+    transition: bottom 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.gallery-item > figcaption > a:hover {
+    bottom: 0px;
+    color: #5e2f17;
+    opacity: 0.85;
+}
+
+.gallery-item > figcaption > a > span {
+    display: block;
+    padding: 16px 0px;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
