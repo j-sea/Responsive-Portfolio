@@ -303,4 +303,11 @@ nav {
         justify-content: center;
         padding-left: 0px;
     }
+
+    #about-photo {
+        float: none;
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
 }
