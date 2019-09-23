@@ -55,23 +55,36 @@ p {
 
 #container-footer {
     background-color: #333333;
-    height: 70px;
+    line-height: 70px;
     border-top: 8px solid #9dddfe;
     margin-top: 38px;
     width: 100%;
     flex-shrink: 0;
-    position: relative;
 }
 
 #container-footer-inner {
     font-size: 12px;
     text-align: center;
     margin: 0px;
-    padding: 0px 0px 4px;
+    padding: 0px;
     width: 100%;
-    position: absolute;
-    bottom: 0px;
     color: #ccc;
+}
+
+#container-footer-inner > p,
+#container-social-icons {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+
+#container-social-icons > a {
+    display: block;
+}
+
+.social-icon {
+    display: block;
+    height: 48px;
 }
 
 #site-title {
