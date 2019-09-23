@@ -7,8 +7,9 @@ figure {
 }
 
 body {
-    background: url('../images/papyrus.png') repeat;
-    color: #777777;
+    /* background: url('../images/papyrus.png') repeat; */
+    background-color: #181818;
+    color: #d5d5d5;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
@@ -17,7 +18,7 @@ body {
 }
 
 h1, h2 {
-    color: #4aaaa5;
+    color: #9dddfe;
     margin-top: 10px;
 }
 
@@ -35,7 +36,7 @@ p {
 }
 
 #container-header {
-    background-color: #ffffff;
+    background-color: #333333;
     height: 90px;
     border-bottom: 2px solid #ccc;
     margin-bottom: 38px;
@@ -46,16 +47,16 @@ p {
 }
 
 #container-main-inner {
-    background-color: #ffffff;
+    background-color: #333333;
     border: thin solid #cccccc;
     box-sizing: border-box;
     padding: 30px;
 }
 
 #container-footer {
-    background-color: #666666;
+    background-color: #333333;
     height: 70px;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid #9dddfe;
     margin-top: 38px;
     width: 100%;
     flex-shrink: 0;
@@ -74,14 +75,18 @@ p {
 }
 
 #site-title {
-    background-color: #4aaaa5;
-    color: #fff;
+    background-color: #d8bb7e;
+    border-radius: 5px;
+    color: #181818;
     float: left;
     font-size: 32px;
     font-weight: bold;
-    height: 90px;
-    padding: 25px;
-    box-sizing: border-box;
+    line-height: 60px;
+    vertical-align: top;
+    height: 60px;
+    margin: 10px 0px;
+    padding: 5px 25px;
+    /* box-sizing: border-box; */
 }
 
 nav {
@@ -111,7 +116,7 @@ nav {
 }
 
 #menu-main > li > a {
-    color: #777;
+    color: #cf9279;
     text-decoration: none;
 }
 
@@ -121,7 +126,7 @@ nav {
 }
 
 #menu-main > li > a:hover, #menu-main > li > a:focus {
-    color: #222;
+    color: #eee;
     text-decoration: underline;
 }
 
@@ -145,10 +150,12 @@ nav {
     display: block;
     width: 100%;
     font-size: 16px;
-    color: #777;
+    color: #d5d5d5;
 }
 
 #contact-name, #contact-email, #contact-message {
+    background-color: #181818;
+    border-radius: 3px;
     box-sizing: border-box;
     padding: 4px;
     border: thin solid #ddd;
@@ -168,12 +175,13 @@ nav {
 }
 
 #contact-form button {
-    background-color: #4aaaa5;
-    color: #fff;
+    background-color: #9dddfe;
+    border-radius: 5px;
+    color: #181818;
     padding: 12px 35px;
     border: 3px double transparent;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -227,7 +235,7 @@ nav {
     font-size: 20px;
     position: absolute;
     bottom: -10px;
-    color: #fff;
+    color: #181818;
     opacity: 1;
     transition: bottom 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
 }
@@ -241,7 +249,7 @@ nav {
 .gallery-item > figcaption > a > span {
     display: block;
     padding: 16px 0px;
-    background-color: #4aaaa5;
+    background-color: #9dddfe;
     position: absolute;
     bottom: 20px;
     width: 100%;
