@@ -239,7 +239,7 @@ nav {
     z-index: 10;
 }
 
-.gallery-item-link {
+.gallery-item-slider {
     display: block;
     text-align: center;
     height: 300%;
@@ -254,7 +254,7 @@ nav {
     transition: bottom 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out;
 }
 
-.gallery-item-link:hover {
+.gallery-item-slider:hover {
     bottom: -18px;
     color: #5e2f17;
     opacity: 0.75;
@@ -281,6 +281,17 @@ nav {
     bottom: -140px; */
     box-sizing: border-box;
     width: 100%;
+}
+
+.gallery-item-more {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.gallery-item-more > a {
+    color: #eee;
 }
 
 
