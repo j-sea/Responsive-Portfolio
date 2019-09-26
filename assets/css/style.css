@@ -287,11 +287,30 @@ nav {
     display: block;
     position: absolute;
     bottom: 4px;
+    left: 0px;
+    width: 100%;
+}
+
+.gallery-item-repo {
+    color: #eee;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 4px;
+}
+
+.gallery-item-deployed {
+    color: #eee;
+    display: block;
+    position: absolute;
+    bottom: 0px;
     right: 4px;
 }
 
-.gallery-item-more > a {
-    color: #eee;
+.gallery-item-repo:hover,
+.gallery-item-deployed:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 
