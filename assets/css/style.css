@@ -299,6 +299,10 @@ nav {
     left: 4px;
 }
 
+.gallery-item-repo.second {
+    bottom: 22px;
+}
+
 .gallery-item-deployed {
     color: #eee;
     display: block;
